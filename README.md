@@ -1,17 +1,13 @@
-**This project is paused!!** 🙏
-
-Some components may not work and some packages/dependencies are deprecated. 
-
 # spotify-demo
 Music player app using the Spotify Android SDK and Spotify Web API.
 
-[![Screenshot](screenshot/screens.png)](https://github.com/junlee91/android-spotify-demo/blob/master/screenshot/screens.png)
+[![Screenshot](screenshot/screens.png)](https://github.com/zhangsscc99/android-spotify-demo/blob/master/screenshot/screens.png)
 
 
 ## Getting Started
 - Clone this repo:
 ```sh
-https://github.com/junlee91/android-spotify-demo.git
+https://github.com/zhangsscc99/android-spotify-demo.git
 ```
 - Open the project in Android Studio
 - Make sure to have `buildToolsVersion "26.0.2"`
@@ -41,34 +37,3 @@ echo -n password | shasum -a 1 | awk '{print $1}'
 ## Get data from Spotify Web API
 - [Spotify Web API for Android](https://github.com/kaaes/spotify-web-api-android)
 - [Documentation](http://kaaes.github.io/spotify-web-api-android/)
-
-## ScalingLayout
-- Follow the instructions from [here](https://github.com/iammert/ScalingLayout)
-
-## Dependency
-If you use Android Studio as recommended, the following dependencies will automatically be installed by Gradle.
-```sh
-android{
-    vectorDrawables.useSupportLibrary = true
-}
-
-repositories {
-    mavenCentral()
-    flatDir {
-        dirs 'libs'
-    }
-    maven { url "https://jitpack.io" }
-}
-
-dependencies {
-    ...
-    compile 'com.github.iammert:ScalingLayout:1.1'
-    compile 'com.android.support:recyclerview-v7:26.1.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'de.hdodenhof:circleimageview:2.2.0'
-
-    compile 'com.spotify.sdk:spotify-android-auth-1.0.0@aar'
-    compile 'com.spotify.sdk:spotify-player-24-noconnect-2.20b@aar'
-    compile 'com.github.kaaes:spotify-web-api-android:0.4.1'
-}
-```
